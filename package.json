@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/nsimas.lwc-l6b3j9a3-fork-l6b54vc7",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve A64qz0eULa840I4GVeGw --open"
+  }
+}

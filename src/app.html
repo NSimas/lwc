@@ -1,0 +1,61 @@
+<template>
+  <lightning-card>
+
+    <div class='slds-m-around_medium' if:true={visible}>
+      <h1 class='slds-text-heading_large'>
+        Trazer dados da Classe
+      </h1>
+      <p>Nome:{nome}</p>
+      <p>Telefone:{telefone}</p>
+      <p>Cpf:{cpf}</p>
+      <p>Idade:{idade}</p>
+    </div>
+
+    <div class='slds-m-around_medium'>
+      <h1 class="slds-text-heading_large">
+        Outros Dados
+      </h1>
+      <p>Email:{email}</p>
+
+      <p>Instagram: </p>
+      <a href={instagram} target="_blank">clique aqui</a>
+      <p>LinkedIn: </p>
+      <a href={linkedin} target="_blank">clique aqui</a>
+    </div>
+
+    <!-- Brand variant: Identifies the primary action in a group of buttons -->
+    <lightning-button variant="brand" 
+		label="Trocar div" 
+		title="Alterar visibilidade" 
+		onclick={trocaDiv}
+      class="slds-m-left_x-small"></lightning-button>
+		<br><hr>
+
+
+    <!-- Brand variant: Identifies the primary action in a group of buttons -->
+    <lightning-button variant="brand" 
+		label="Botão Harry" 
+		title="Trocar Vars" 
+		onclick={trocaValor}
+      class="slds-m-left_x-small"></lightning-button>
+				<br><hr>
+
+    <!-- Brand variant: Identifies the primary action in a group of buttons -->
+    <lightning-button variant="slds-button slds-button_destructive"
+		label="Botão Fulano" 
+		title="Trocar Vars deVoltaStatic" 
+		onclick={trocaDeVolta}
+      class="slds-button slds-button_destructive"></lightning-button>
+		<br><hr>
+
+
+  </lightning-card>
+</template>
+
+<!-- trazer dados de uma classe que vou inserir
+DIV
+H1 Outros Dados
+E-mail
+Instagram
+LinkedIn
+-->
